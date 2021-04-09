@@ -5,8 +5,9 @@
     <title>Document</title>
 </head>
 <body>
+обертка пришла
     <?=$menu?>
     <?=$content?>
-    <?=$contacts?>
+    <?=$footer?>
 </body>
 </html>

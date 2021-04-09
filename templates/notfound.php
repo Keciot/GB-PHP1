@@ -1,0 +1,1 @@
+<img class='not-found' src="../img/big/not_found.png" alt="Error">
