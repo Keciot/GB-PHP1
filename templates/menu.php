@@ -1,6 +1,6 @@
 <?php 
 $menuArr = array(
-    'Главная' => '',
+    'Главная' => 'index.php',
     'Каталог' => '/?page=catalog',
     'Контакты' => '/?page=contacts',
     'Пункт меню' => /* array(
@@ -16,6 +16,10 @@ function menuConstructor($array) {
     <?php endforeach;
      echo '</ul>';
 }
-
-menuConstructor($menuArr);
 ?>
+<header>Купи одну настолку, и вторую тоже купи</header>
+
+<?php menuConstructor($menuArr); ?>
+
+
+
