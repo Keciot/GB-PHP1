@@ -24,6 +24,12 @@ ul {
 
 li {
   padding: 30px;
+  list-style-type: none;
+  font-size: 30px;
+}
+
+li a {
+    text-decoration: none;
 }
 
 .cart {
@@ -33,7 +39,7 @@ li {
 }
 
 p {
-    font-size: 40px;
+    font-size: 25px;
     margin: 0;
 }
 
@@ -134,4 +140,18 @@ img:hover {
     position: inherit;
     bottom: 0;
     right: 0;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.gallery-wrap a {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 20px;
 }

@@ -1,25 +1,39 @@
 <?php 
-$menuArr = array(
-    'Главная' => 'index.php',
-    'Каталог' => '/?page=catalog',
-    'Контакты' => '/?page=contacts',
-    'Пункт меню' => /* array(
-        'Подменю 1' => '/?page=submenu1',
-        'Подменю 2' =>  */'/?page=submenu2'
-    /* )  Для подменю фокус пока не удался, пусть полежит заготовка*/
-);
+$menuArr = [
+    [
+        'title' => 'Главная',
+        'href' => 'index.php'
+    ],
+    [
+        'title' => 'Каталог',
+        'href' => '/?page=catalog'
+    ],
+    [
+        'title' => 'Галерея',
+        'href' => '/?page=gallery'
+    ],
+    [
+        'title' => 'Пункт меню',
+        'href' => '/?page=nextmenu',
+        'subitems' => [
+            [
+                'title' => 'Подменю 1',
+                'href' => '/?page=nextmenu/sub1'
+            ],
+            [
+                'title' => 'Подменю 2',
+                'href' => '/?page=nextmenu/sub2'
+            ]
+        ]
+    ],
 
-function menuConstructor($array) {
-    echo '<ul>';
-    foreach($array as $key => $value):?>
-        <li><a href="<?=$value?>"><?=$key?></a></li>
-    <?php endforeach;
-     echo '</ul>';
-}
-?>
-<header>Купи одну настолку, и вторую тоже купи</header>
+];
 
-<?php menuConstructor($menuArr); ?>
+$result = "<ul>";
+$result .= menuRender($menuArr);
+$result .= "</ul>";
+
+echo $result;
 
 
 

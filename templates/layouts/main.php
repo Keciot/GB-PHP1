@@ -11,6 +11,7 @@
     <title>Прототип магазина</title>
 </head>
 <body>
+<header>Купи одну настолку, и вторую тоже купи</header>
     <?=$menu?>
     <?=$content?>
     <?=$footer?>
