@@ -20,8 +20,11 @@ switch ($page) {
     case 'catalog':
         $params['catalog'] = getCatalog();
         break;
+
+ /*    case 'gallery':
+        $params['catalog'] = getGallery();
+        break; */
 }
 
 //Запускаем сборку страницы с параметрами
 echo render($page, $params);
-

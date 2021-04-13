@@ -9,8 +9,8 @@ $menuArr = [
         'href' => '/?page=catalog'
     ],
     [
-        'title' => 'Контакты',
-        'href' => '/?page=contacts'
+        'title' => 'Галерея',
+        'href' => '/?page=gallery'
     ],
     [
         'title' => 'Пункт меню',

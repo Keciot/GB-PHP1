@@ -15,3 +15,4 @@ include PATH_TO_PROJECT . '/engine/menu.php';
 
 //Локальные, нужны для работы отдельных страниц
 include PATH_TO_PROJECT . '/engine/catalog.php';
+include PATH_TO_PROJECT . '/engine/gallery.php';
